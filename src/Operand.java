@@ -14,13 +14,4 @@ public class Operand {
     public int[] getValue() {
         return value;
     }
-
-    public OperandType getType() {
-        if (value.length == 1) {
-            return OperandType.CONSTANT;
-        } else if (value.length == 4) {
-            return OperandType.MATRIX;
-        }
-        return OperandType.BAD_VARIABLE;
-    }
 }
